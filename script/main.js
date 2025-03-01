@@ -175,6 +175,14 @@
 import { displayCalendar, changeMonth } from "./calendar.js";
 import { handleDateSelection } from "./datePicker.js";
 
+addEventListener("DOMContentLoaded", (event) => {
+	if (!sessionStorage.getItem("reloaded")) {
+		sessionStorage.setItem("reloaded", "true");
+		setTimeout(() => {
+			window.location.reload();
+		}, 100); // 짧은 지연 후 새로고침
+	}
+});
 // 달력 초기 표시
 document.addEventListener("DOMContentLoaded", () => {
 	displayCalendar();
