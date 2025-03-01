@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<title>myCalendar</title>
+	</head>
+
+	<body>
+		<h1 class="title">Date Picker</h1>
+
+		<div class="display-selected">
+			<span class="selected">Select Date</span>
+		</div>
+
+		<div class="container">
+			<div class="calendar">
+				<header class="calendar-nav">
+					<pre class="left"><i class='bx bxs-left-arrow'></i></pre>
+					<div class="header-display">
+						<div class="display-month"></div>
+						<div class="display-year"></div>
+					</div>
+					<pre class="right"><i class='bx bxs-right-arrow' ></i></pre>
+				</header>
+
+				<div class="calendar-grid">
+					<div class="week">
+						<div>Sun</div>
+						<div>Mon</div>
+						<div>Tue</div>
+						<div>Wed</div>
+						<div>Thu</div>
+						<div>Fri</div>
+						<div>Sat</div>
+					</div>
+					<div class="days">
+						<div class="current-date"></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="./script/main.js"></script>
+	</body>
+</html>
